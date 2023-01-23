@@ -1,0 +1,246 @@
+
+html{
+	background-image: url(../images/bats.gif);
+}
+body{
+	font-family: sans-serif;
+	width: 95%;
+	max-width: 960px;
+	margin: 3.33% auto;
+	border: 1px solid black;
+	box-shadow: 3px 15px 18px 10px black;
+	background: white;
+}
+header{
+	border-bottom: 2px solid black;
+	padding: 1em 0em;
+	background-image: -webkit-linear-gradient(45deg, white 0%, #FFA500 75%, black 100%);
+	background-image: -moz-linear-gradient(45deg, white 0%, #FFA500 75%, black 100%);
+	background-image: -o-linear-gradient(45deg, white 0%, #FFA500 75%, black 100%);
+	background-image: linear-gradient(45deg, white 0%, #FFA500 75%, black 100%);
+}
+header img{
+	float: left;
+	padding-right: 1.875%;
+	width: 10.6%;
+	max-width: 85px;
+	min-width: 40px;
+}
+header h2{
+	font-size: 230%;
+} 
+header h3{
+	font-size: 125%;
+	padding-bottom: .75em;
+}
+main{
+	display: flex;
+}
+#nav_menu{
+	clear: left:
+}
+#nav_menu ul {
+	list-style-type: none;
+	position: relative;
+}
+#nav_menu ul li{
+	float: left;
+	width: 20%;
+}
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul ul li{
+	float: none;
+}
+#nav_menu ul li:hover > ul{
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+#nav_menu ul{
+	margin: 0 ;
+	padding: 0;
+}
+#nav_menu ul li:hover ul{
+	width: 100%;
+}
+#nav_menu ul li a{
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+}
+#nav_menu ul li a.current{
+	color: #FFA500;
+}
+#nav_menu ul li a:hover, #nav_bar ul li a:focus {
+	background-color: gray;
+}
+
+aside{
+	float: left;
+	width: 20%;
+	padding: 1.25em 0;
+}
+#nav_list ul{
+	list-style-type: none;
+	padding-left: 15%;
+	width: 70%;
+}
+#nav_list ul li{
+	margin-bottom: 0.5em;
+	border: 2px solid black
+}
+#nav_list ul li a {
+	display: block;
+	text-decoration: none;
+	padding: .5em 0 .5em 7.3%;
+	color: black;
+	font-size: 100%;
+	background-color: #FFA500;
+	font-weight: bold;
+}
+article{
+	float: left;
+	background-color: #F5DEB3;
+	width: 20%;
+	padding: 1.25em 0;
+}
+article img{
+	width: 50%;
+	max-height: 120px;
+	min-width: 40px;
+	padding: 10px 0;
+}
+article{
+	padding: o 10px;
+}
+article ul{
+	padding-left: 20%;
+	list-style: none;
+}
+section{
+	padding 2.25em 1.5% 1.25em 1.5%;
+	width: 60%;
+}
+section h1{
+	font-size: 140%;
+	margin-bottom: .5em;
+}
+section h2{
+	font-size: 125%;
+	margin: .8em 0 .5em 0;
+}
+section h3{
+	font-size: 125%;
+	margin: .8em 0 .5em 0;
+}
+section p{
+	margin-bottom: .5em;
+}	
+section a{
+	font-weight: bold;
+	color: orange;
+}
+section img{
+	width: 210px;
+	max-width: 250px;
+	float: left;
+	margin-right: 50px;
+}
+a:link{ 
+	color: #FFA500;
+	font-weight: bold;
+}	
+a:visited{
+	color: #FFA500;
+}
+a:hover, a:focus{
+	color: green;
+}
+
+
+footer{
+	border-top: 2px solid black;
+	padding: 0.5em 1em;
+	clear:both;
+	background: -webkit-linear-gradient(45deg, black 0%, #FFA500 75%, white 100%);
+	background: -moz-linear-gradient(45deg, black 0%, #FFA500 75%, white 100%);
+	background: -o-linear-gradient(45deg, black 0%, #FFA500 75%, white 100%);
+	background: linear-gradient(45deg, black 0%, #FFA500 75%, white 100%);
+}
+footer p {
+	font-size: 90%;
+	text-align: center;
+}
+#mobile_menu{
+	display: none;
+}
+@media only screen and (max-width: 800px){
+
+html{background-image: none;}
+
+body{
+	width: 90%;
+	max-width: 800px;
+	box-shadow: none;
+	font-size: 90%;
+}
+
+@media only screen and (max-width: 767px){
+	* {
+	font-size: 90%;
+}
+	#mobile_menu{
+		display: block;
+	}
+	
+	#nav_bar{
+		display:none;
+	}
+	
+	#nav_vertical{
+	width: 100%;
+	height: auto;
+	padding: 0;
+	}
+	
+	
+	#nav_vertical ul{
+	list-style-type: none;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding: 2em 0;
+	width: 50%;	
+	}
+
+	#nav_vertical ul li{
+		margin-bottom: 0.5em;
+		border: 3px solid black;
+		padding: 0;
+		text-align: center;
+	}
+	
+	body>section{
+		float:none;
+	}
+	
+}
+
+@media only screen and (max-width:479px){
+	
+	header section h2{
+		font-size: 200%;
+	}
+	header section h3{
+		font-size: 110%;
+	}
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title> The Halloween Store</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/personal.css"> 
+	<link href=11 "https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet"> 
+	<meta name= "viewport" content="width=device-width, initial-scale=1">
+	<link rel = "stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_bar').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+</head>
+<body>
+	<header>
+	<style>
+	body{
+	font-family: "Creepster";}
+	</style>
+		<img src="images/pumpkinO.gif" alt="PumpkinO" height="80">
+		<h2>The Halloween Store</h2>
+		<h3>For the little Goblin in all of us!</h3>
+	</header>
+	<nav id = "nav_bar">
+		<ul>
+			<li><a href ="index.html" tabindex="0">Home</a></li>
+			<li><a href = "slides/products/product_list.html"> Product List</a></li>
+			<li><a class = "current" href = "slides/personal/personal.html"> Personal</a></li>
+			<li><a href = "slides/decorations/index.html"> Decorating Ideas</a>
+				<ul>
+					<li><a href="#">Outdoor</a></li>
+                	<li><a href="#">Indoor</a></li>
+                	<li><a href="#">Table</a></li>
+                	<li><a href="#">Treats</a></li>
+				</ul>
+			</li>
+			<li><a href = "email.html"> Join Email </a></li>
+		</ul>
+	</nav>
+	<main>
+	<section>
+	<h1>Here is my favorite haunted house!</h1><br>
+	<video id="videoplayer" src="media/hobbsgrove.mp4" controls autoplay>
+		<source src="media/hobbsgrove.swf">
+	</video>
+	<p>
+	</section>
+	</main>
+</body>
+	<aside id = "nav_vertical">
+		<ul>
+			<li><a href="props.html" target="_self">Pictures</a></li>
+			<li><a href="costumes.html" target="_self">Home Videos</a></li>
+			<li><a href="special.html" target="_self">Haunted Houses</a></li>
+			<li><a href="masks.html" target="_self">Scary Stories</a></li>
+		</ul>
+	</aside>
+	
+	<footer>
+		<p>&copy; 2018, Ben Murach</p>
+	</footer>
+</html>

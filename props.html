@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/c10_category.css"> 
+	<meta name= "viewport" content="width=device-width, initial-scale=1">
+	<link rel = "stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<img src="images/pumpkinO.gif" alt="PumpkinO" height="80">
+		<h2>The Halloween Store</h2>
+		<h3>For the little Goblin in all of us!</h3>
+	</header>
+	<nav id = "mobile_menu"></nav>
+	<nav id = "nav_menu">
+		<ul>
+			<li><a href = "index.html">Home</a></li>
+			<li><a href = "slides/products/product_list.html"> Product List</a></li>
+			<li><a href = "slides/personal/personal.html"> Personal</a></li>
+			<li><a href = "slides/decorations/index.html"> Decorating Ideas</a>
+				<ul>
+					<li><a href="#">Outdoor</a></li>
+                	<li><a href="#">Indoor</a></li>
+                	<li><a href="#">Table</a></li>
+                	<li><a href="#">Treats</a></li>
+				</ul>
+			</li>
+			<li><a href = "email.html"> Join Email </a></li>
+		</ul>
+	</nav>
+	<main>
+	<section>
+		<h2>Props</h2>
+        <h3><a href="products/flybats.html">Flying bats</a></h3>
+        <p>Bats flying in front of a full moon make for an eerie spectacle.</p>
+        <p><b>Price:</b>69.99</p>
+		
+        <h3><a href="products/20cat.html">20" Deranged cat</a></h3>
+        <p>This cat provides its own light and is perfect for a backyard haunting.</p>
+        <p><b>Price:</b>19.99</p>
+		
+        <h3><a href="products/16rat.html">16" Rat</a></h3>
+        <p>This guy is sure to shorten the stay of any unwanted house guests.</p>
+        <p><b>Price:</b>14.99</p>
+		
+        <h3><a href="products/20rat.html">20" Rat</a></h3>
+        <p>Yuch! This one will keep you awake at night.</p>
+        <p><b>Price:</b>19.99</p>
+		
+        <h3><a href="products/Lifesizeske.html">Life-size skeleton</a></h3>
+        <p>This blown plastic skeleton will be the life of the party. Use him as is or 
+        dress him up for an even better effect.</p>
+        <p><b>Price:</b>14.95</p>
+		
+	</section>
+	</main>
+</body>
+	<aside> 
+		<nav id = "nav_list">
+		<ul>
+			<li><a href="props.html">Props</a></li>
+			<li><a href="costumes.html">Costumes</a></li>
+			<li><a href="special.html">Special Effects</a></li>
+			<li><a href="masks.html">Masks</a></li>
+		</ul>
+	</aside>
+	<footer>
+		<p>&copy; 2018, Ben Murach</p>
+	</footer>
+</html>
